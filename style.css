@@ -1,0 +1,32 @@
+.rounded-container {
+    background: linear-gradient(to bottom right, #871ed3, #6b16a9);
+    border-radius: 100%;
+    width: 200px;
+    height: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 30px;
+  }
+  .square {
+    width: 58px;
+    height: 58px;
+    border-radius: 6px;
+  }
+  
+  .white-border {
+    border: 12px solid #ffffffb3;
+    transform: rotate(45deg);
+  }
+  
+  .white-background {
+    background-color: #ffffff;
+    transform: rotate(-45deg) translate(-6px, 12px);
+    width: 76px;
+    height: 76px;
+  }
+
+  .rotated {
+    transform-origin: bottom left;
+  }
+  
