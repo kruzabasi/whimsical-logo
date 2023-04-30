@@ -13,17 +13,27 @@
     height: 58px;
     border-radius: 6px;
   }
+
+  @keyframes roll-right {
+    0% { transform: translateX(-100%) rotate(45deg); }
+    100% { transform: rotate(45deg); }
+  }
   
+  @keyframes roll-left {
+    0% { transform: translateX(100%) rotate(-45deg); }
+    100% { transform: rotate(-45deg) translate(-6px, 12px); }
+  }
+
   .white-border {
     border: 12px solid #ffffffb3;
-    transform: rotate(45deg);
+    animation: roll-right 1s forwards;
   }
   
   .white-background {
     background-color: #ffffff;
-    transform: rotate(-45deg) translate(-6px, 12px);
     width: 76px;
     height: 76px;
+    animation: roll-left 1s forwards;
   }
 
   .rotated {
